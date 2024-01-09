@@ -14,7 +14,7 @@ const Section = (props) => {
     >
       <div className="w-1/2 flex items-center justify-center">
         <div className="max-w-sm w-full">
-          <div className="bg-white  rounded-lg px-8 py-12">
+          <div className="bg-white rounded-lg px-8 py-12">
             {props.children}
           </div>
         </div>
@@ -37,48 +37,50 @@ export const Overlay = () => {
 
   return (
     <Scroll html>
-      <div class="w-screen">
+      <div className="w-screen">
         <Section opacity={opacityFirstSection}>
-          <h1 className="font-semibold font-serif text-2xl">
+          <h1 className="font-semibold font-serif text-lg lg:text-2xl">
             Hello, I'm Fahmi
           </h1>
-          <p className="text-gray-500">Welcome to my short portfolio</p>
-          <p className="mt-3">I know:</p>
-          <ul className="leading-9">
+          <p className="text-gray-500 text-sm lg:text-base">
+            Welcome to my short portfolio
+          </p>
+          <p className="mt-3 text-sm lg:text-base">I know:</p>
+          <ul className="leading-9 text-sm lg:text-base">
             <li>🧑‍💻 How to code</li>
             <li>🧑‍🏫 How to learn</li>
             <li>📦 How to deliver</li>
           </ul>
-          <p className="animate-bounce  mt-6">↓</p>
+          <p className="animate-bounce mt-6 text-sm lg:text-base">↓</p>
         </Section>
         <Section right opacity={opacitySecondSection}>
-          <h1 className="font-semibold font-serif text-2xl">
+          <h1 className="font-semibold font-serif text-lg lg:text-2xl">
             Here are my skillsets 🔥
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 text-sm lg:text-base">
             <b>Frontend 🚀</b>
           </p>
-          <ul className="leading-9">
+          <ul className="leading-9 text-sm lg:text-base">
             <li>ReactJS</li>
             <li>Tailwind</li>
             <li>ThreeJS</li>
           </ul>
-          <p className="mt-3">
+          <p className="mt-3 text-sm lg:text-base">
             <b>Backend 🔬</b>
           </p>
-          <ul className="leading-9">
+          <ul className="leading-9 text-sm lg:text-base">
             <li>NodeJS</li>
             <li>Express</li>
             <li>GraphQL</li>
           </ul>
-          <p className="animate-bounce  mt-6">↓</p>
+          <p className="animate-bounce mt-6 text-sm lg:text-base">↓</p>
         </Section>
         <Section opacity={opacityLastSection}>
-          <h1 className="font-semibold font-serif text-2xl">
+          <h1 className="font-semibold font-serif text-lg lg:text-2xl">
             Curious about my work? 🤔
           </h1>
-          <p className="mt-6 p-3 bg-slate-200 rounded-lg">
-             <a href="https://github.com/Man4ct">Visit my Github Page</a>
+          <p className="mt-6 p-3 bg-slate-200 rounded-lg text-sm lg:text-base">
+            <a href="https://github.com/Man4ct">Visit my Github Page</a>
           </p>
         </Section>
       </div>
